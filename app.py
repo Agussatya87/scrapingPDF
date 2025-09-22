@@ -29,6 +29,16 @@ def upload_file():
 
     file.save(pdf_path)
 
+    return jsonify({"status": "success", "message": "File berhasil diupload!", "file_id": file_id})
+
+@app.route("/extract/<file_id>", methods=["POST"])
+def extract_data(file_id):
+    pdf_path = os.path.join(UPLOAD_FOLDER, f"{file_id}.pdf")
+    excel_path = os.path.join(OUTPUT_FOLDER, f"{file_id}.xlsx")
+
+    if not os.path.exists(pdf_path):
+        return jsonify({"status": "error", "message": "File PDF tidak ditemukan."}), 404
+
     try:
         df = extract_kemenku_strong(pdf_path, excel_path)
 
