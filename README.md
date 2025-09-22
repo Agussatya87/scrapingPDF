@@ -1,4 +1,4 @@
-# Kedinasan Student Selection Data Scraping (2023)
+# Data Collection for Civil Servant Student Candidate Selection (2023)
 
 ## Deskripsi
 
