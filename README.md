@@ -8,9 +8,27 @@ Aplikasi ini dibuat untuk mengekstrak data dari file PDF hasil seleksi calon mah
 
 - Upload file PDF hasil seleksi kedinasan  
 - Ekstraksi data teks / tabel dari PDF secara otomatis
-- overview dalam tabel beberapa data yang sudah di ekstrak  
+- Overview dalam tabel beberapa data yang sudah di ekstrak  
 - Output dalam format Excel (.xlsx)  
 - Interface web yang user‐friendly menggunakan Flask  
+
+## 📑 Kolom Hasil Ekstraksi
+Aplikasi akan mengekstrak data dari PDF ke dalam file Excel dengan struktur kolom berikut:
+| Kolom              | Deskripsi                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| **Sekolah**        | Nama sekolah atau instansi penyelenggara (contoh: *POLITEKNIK STATISTIKA STIS*)                                     |
+| **Jurusan**        | Program studi / jurusan yang dipilih (contoh: *D-III STATISTIKA*)                                                   |
+| **Lokasi Formasi** | Lokasi tempat formasi / penempatan (contoh: *Aceh*)                                                                 |
+| **Jenis Formasi**  | Keterangan jenis formasi seleksi (contoh: *P1 – Calon Mahasiswa STIS Program Studi Statistika Program Diploma III*) |
+| **No**             | Nomor urut peserta dalam daftar                                                                                     |
+| **No Peserta**     | Nomor peserta ujian seleksi (ID unik)                                                                               |
+| **Kode Pend**      | Kode pendidikan / formasi (misalnya: *3001000*, *3002000*)                                                          |
+| **Nama**           | Nama lengkap peserta                                                                                                |
+| **TWK**            | Nilai *Tes Wawasan Kebangsaan*                                                                                      |
+| **TIU**            | Nilai *Tes Intelegensi Umum*                                                                                        |
+| **TKP**            | Nilai *Tes Karakteristik Pribadi*                                                                                   |
+| **Total**          | Jumlah total skor (TWK + TIU + TKP)                                                                                 |
+| **Keterangan**     | Status atau catatan hasil (contoh: *P/L*, *L*, dsb.)                                              |
 
 
 ## Installation
