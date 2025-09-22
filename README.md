@@ -1,13 +1,35 @@
-# Kedinasan Student Selection Data Scraping (2023)
+# Data Collection for Civil Servant Student Candidate Selection (2023)
 
-## Project Overview
-This project is a web application designed to scrape and extract data from the 2023 Kedinasan student selection results. It allows users to upload PDF files containing selection results, processes them, and then provides the extracted data in an organized Excel format.
+## Deskripsi
 
-## Features
--   **PDF Upload:** Users can easily upload one or more PDF files containing the Kedinasan student selection results.
--   **Data Extraction:** Utilizes advanced techniques to accurately extract relevant information from the uploaded PDF documents.
--   **Excel Output:** Generates a structured Excel file (`.xlsx`) for each processed PDF, making the data easy to analyze and use.
--   **Web Interface:** A user-friendly web interface built with Flask for seamless interaction.
+Aplikasi ini dibuat untuk mengekstrak data dari file PDF hasil seleksi calon mahasiswa kedinasan tahun 2023. Pengguna dapat mengunggah satu atau beberapa file PDF melalui interface web, kemudian aplikasi akan memproses dokumen tersebut dan menghasilkan file Excel (.xlsx) yang berisi data hasil ekstraksi. Tujuan agar data lebih mudah dianalisis dan diolah lebih lanjut.
+
+## Fitur
+
+- Upload file PDF hasil seleksi kedinasan  
+- Ekstraksi data teks / tabel dari PDF secara otomatis
+- Overview dalam tabel beberapa data yang sudah di ekstrak  
+- Output dalam format Excel (.xlsx)  
+- Interface web yang user‐friendly menggunakan Flask  
+
+## 📑 Kolom Hasil Ekstraksi
+Aplikasi akan mengekstrak data dari PDF ke dalam file Excel dengan struktur kolom berikut:
+| Kolom              | Deskripsi                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| **Sekolah**        | Nama sekolah atau instansi penyelenggara (contoh: *POLITEKNIK STATISTIKA STIS*)                                     |
+| **Jurusan**        | Program studi / jurusan yang dipilih (contoh: *D-III STATISTIKA*)                                                   |
+| **Lokasi Formasi** | Lokasi tempat formasi / penempatan (contoh: *Aceh*)                                                                 |
+| **Jenis Formasi**  | Keterangan jenis formasi seleksi (contoh: *P1 – Calon Mahasiswa STIS Program Studi Statistika Program Diploma III*) |
+| **No**             | Nomor urut peserta dalam daftar                                                                                     |
+| **No Peserta**     | Nomor peserta ujian seleksi (ID unik)                                                                               |
+| **Kode Pend**      | Kode pendidikan / formasi (misalnya: *3001000*, *3002000*)                                                          |
+| **Nama**           | Nama lengkap peserta                                                                                                |
+| **TWK**            | Nilai *Tes Wawasan Kebangsaan*                                                                                      |
+| **TIU**            | Nilai *Tes Intelegensi Umum*                                                                                        |
+| **TKP**            | Nilai *Tes Karakteristik Pribadi*                                                                                   |
+| **Total**          | Jumlah total skor (TWK + TIU + TKP)                                                                                 |
+| **Keterangan**     | Status atau catatan hasil (contoh: *P/L*, *L*, dsb.)                                              |
+
 
 ## Installation
 
